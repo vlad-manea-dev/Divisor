@@ -11,15 +11,18 @@ public class Main {
     int end = sc.nextInt();
 
     System.out.println("Type a divisor");
-    int divisior = sc.nextInt();
+    int divisor = sc.nextInt();
 
+    int total = 0;
 //        while (count < end){
 //          res = res * (count + 1);
 //          count++;
-    for (int count = 0; count < 10; count++){
-      int res = count;
-      if (count % divisior == 0);
-      System.out.println("Number: " + res);
-        }
+    for (int count = start; count <= end; count++) {
+      if (count % divisor == 0) {
+        total += count;
+        System.out.println("Total: " + total);
+      }
     }
-    }
+    sc.close();
+  }
+}
